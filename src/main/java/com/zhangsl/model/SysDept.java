@@ -1,7 +1,16 @@
 package com.zhangsl.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import java.util.Date;
 
+@Builder
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class SysDept {
     private Integer id;
 

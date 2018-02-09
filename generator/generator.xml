@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "
+http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <!-- 数据库驱动包位置 -->
-    <classPathEntry location="generator/mysql-connector-java-5.1.34.jar" /> <!-- 1 -->
+    <classPathEntry location="D:\java\ideProject\permission\generator\mysql-connector-java-5.1.34.jar" /> <!-- 1 -->
     <context id="DB2Tables" targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressAllComments" value="true" />
@@ -14,16 +15,16 @@
             <property name="forceBigDecimals" value="false" />
         </javaTypeResolver>
         <!-- 生成模型的包名和位置 --> <!-- 3 -->
-        <javaModelGenerator targetPackage="com.zhangsl.model" targetProject="generator/src/model">
+        <javaModelGenerator targetPackage="com.zhangsl.model" targetProject="D:\java\ideProject\permission\generator\src">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
         <!-- 生成的映射文件包名和位置 --> <!-- 4 -->
-        <sqlMapGenerator targetPackage="com.zhangsl.mapper" targetProject="generator/src/mapper">
+        <sqlMapGenerator targetPackage="com.zhangsl.mapper" targetProject="D:\java\ideProject\permission\generator\src">
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
         <!-- 生成DAO的包名和位置 --> <!-- 5 -->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.zhangsl.dao" targetProject="generator/src/dao">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.zhangsl.dao" targetProject="D:\java\ideProject\permission\generator\src">
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
         <!-- 要生成那些表(更改tableName和domainObjectName就可以) --><!-- 6 -->

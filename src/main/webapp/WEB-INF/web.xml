@@ -10,6 +10,7 @@
 
   <display-name>Archetype Created Web Application</display-name>
 
+  <!-- 上下文监听器 -->
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>

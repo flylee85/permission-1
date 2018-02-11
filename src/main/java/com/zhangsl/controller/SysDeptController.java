@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -27,6 +28,10 @@ public class SysDeptController {
     @Autowired
     private SysTreeService mSysTreeService;
 
+    @RequestMapping("/dept.page")
+    public ModelAndView page() {
+        return new ModelAndView("dept");
+    }
 
     /**
      * 创建部门
@@ -55,6 +60,6 @@ public class SysDeptController {
     @ResponseBody
     public JsonData tree() {
         List<DeptLevelDto> dtoList = mSysTreeService.deptTree();
-        return JsonData.success(dtoList);
+        return JsonData.success(dtoList,"成功");
     }
 }
